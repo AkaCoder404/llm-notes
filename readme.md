@@ -209,6 +209,8 @@ max_seq_len: 2048
 batch_size: 32
 ```
 
+The specific training outputs can be found in `ok_slurm_output-X.txt` files.
+
 ### GSM8K
 
 | Model               | 0      | 1    | 3      | 5     | 7      | 9      |
@@ -220,10 +222,10 @@ When k=9, *Input prompt (2092 tokens) is too long and exceeds limit of 2048*
 
 ### MLU
 
-| Model               | 1      | 3   | 5   |
-| ------------------- | ------ | --- | --- |
-| MiniCPM-2B-dpo-fp32 | 0.5175 |     |     |
-| MiniCPM-1B-sft-bf16 |        |     |     |
+| Model               | 1      | 3      | 5      |
+| ------------------- | ------ | ------ | ------ |
+| MiniCPM-2B-dpo-fp32 | 0.5175 | 0.5278 | 0.4959 |
+| MiniCPM-1B-sft-bf16 |        |        |        |
 
 
 ## Fine Tuning
